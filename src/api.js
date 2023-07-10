@@ -21,7 +21,6 @@ apiClient.interceptors.request.use(
   }
 );
 
-// public routes
 
 export const login = async (data) => {
   try {
@@ -45,7 +44,7 @@ export const register = async (data) => {
   }
 };
 
-// secure routes
+
 export const sendFriendInvitation = async (data) => {
   try {
     return await apiClient.post("/friend-invitation/invite", data);
